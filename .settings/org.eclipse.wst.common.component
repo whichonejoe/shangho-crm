@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="shangho-blackcore">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="shangho-configuration.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shangho-configuration/shangho-configuration">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shangho-crm-logical.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/shangho-crm-logical/shangho-crm-logical">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="crmdao.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/crmdao/crmdao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="shangho-blackcore"/>
+        <property name="java-output-path" value="/shangho-blackcore/target/classes"/>
+    </wb-module>
+</project-modules>
